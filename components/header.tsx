@@ -5,7 +5,7 @@ import Button from "./button";
 
 export default function Header() {
   return (
-    <div>
+    <div className="relative h-[800px]">
       <div className="absolute top-40 z-40 flex h-96 w-full flex-col items-center justify-around text-white">
         <div className="flex h-1/3 flex-col items-center justify-around">
           <h1 className="h-16 text-5xl font-bold m-md:text-3xl m-md:h-1">Fashion & Clothing Store</h1>

@@ -9,7 +9,7 @@ export default function NavBar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="fixed z-50 flex h-16 w-full items-center justify-between bg-stone-700 px-20 font-pacifico text-xl text-white m-sm:h-12 m-lg:px-10">
+    <div className="fixed z-50 flex h-16 w-full items-center justify-between bg-stone-700 px-20 font-pacifico text-xl text-white m-sm:h-12 m-lg:px-10 shadow-lg">
       <Script
         src="https://kit.fontawesome.com/0f3f34a956.js"
         strategy="afterInteractive"
@@ -64,7 +64,7 @@ export default function NavBar() {
         }`}
       ></span>
       <ul
-        className={`z-50 flex w-32 items-center justify-between transition-[right] duration-300 ease-in-out m-sm:relative m-sm:!top-[23rem] m-lg:absolute m-lg:top-96 m-lg:h-40  m-xl:min-w-[14rem] m-lg:max-w-[15rem] m-xl:w-5/12 m-lg:flex-col  m-lg:items-center m-lg:justify-around m-lg:bg-stone-700 ${
+        className={`z-50 flex w-32 items-center justify-between transition-[right] duration-300 ease-in-out m-sm:relative m-sm:!top-[23rem] m-lg:absolute m-lg:top-96 m-lg:h-40  m-lg:min-w-[14rem] m-lg:max-w-[15rem] m-lg:w-5/12 m-lg:flex-col  m-lg:items-center m-lg:justify-around m-lg:bg-stone-700 ${
           open === false ? "right-[-40rem]" : "right-0"
         }`}
       >
