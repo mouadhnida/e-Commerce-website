@@ -1,5 +1,5 @@
 
-export default function Button(props: any) {
+export default function Button(props) {
   return (
     <a
           href="#_"

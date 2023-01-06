@@ -2,11 +2,7 @@ import '../globals.css'
 import NavBar from '../../components/navbar'
 
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
+export default function RootLayout() {
   return (  
     <div>
         <NavBar />
