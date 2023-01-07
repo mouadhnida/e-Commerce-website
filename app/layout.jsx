@@ -1,8 +1,6 @@
 import './globals.css'
-import Head from './head';
-import NavBar from "../components/navbar";
 
-export default function RootLayout() {
+export default function RootLayout({ children }) {
   return (
     <html lang="en">
       {/*

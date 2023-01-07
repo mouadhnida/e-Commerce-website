@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@prisma/client": "^4.8.0",
+    "@prisma/client": "^4.8.1",
     "@react-icons/all-files": "^4.1.0",
     "@reacticons/ionicons": "^6.0.4",
     "autoprefixer": "^10.4.13",
