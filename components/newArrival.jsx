@@ -8,7 +8,7 @@ export default function NewArrival() {
     <div className="h-[600px] z-[999] bg-white relative pt-24 px-6 pb-20">
         <div className="flex justify-between pb-7">
             <div className="text-3xl font-semibold">Trending Products</div>
-            <Link href={"/"}><div className=" font-semibold text-stone-600 float-right flex items-center">See everything <BsArrowRightShort/></div></Link>
+            <Link href={"/"}><div className=" font-semibold text-stone-600 float-right flex items-center pr-5 group/arrow" >See everything <span className="relative group-hover/arrow:left-1 left-0 transition-all duration-300 ease-in-out pt-1 "><BsArrowRightShort/></span></div></Link>
         </div>
         <div className="flex flex-wrap gap-8">
             <Link href={"/"}><div className="w-96 h-[32rem] rounded-lg border border-gray-300 group">
