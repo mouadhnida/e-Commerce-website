@@ -4,6 +4,7 @@ import {HiOutlineShoppingBag} from "react-icons/hi2"
 import Button from "./button";
 
 export default function Header() {
+  
   return (
     <div className="relative h-[800px]">
       <div className="absolute top-40 z-40 flex h-96 w-full flex-col items-center justify-around text-white">
