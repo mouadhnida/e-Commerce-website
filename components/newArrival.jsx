@@ -26,7 +26,7 @@ export default function NewArrival() {
         </div>
         <Link href={"/"}>
           <div className=" group/arrow float-right flex items-center pr-5 font-semibold text-stone-600 m-sm:pr-1">
-            See everything{" "}
+            See everything
             <span className="relative left-0 pt-1 transition-all duration-300 ease-in-out group-hover/arrow:left-1 ">
               <BsArrowRightShort />
             </span>
@@ -37,7 +37,7 @@ export default function NewArrival() {
         {newArrival.map((item) => (
           <li key={item.id}>
             <Link href={`/items/${item.id}`}>
-              <div className="group h-[32rem] w-80 rounded-lg border border-gray-300">
+              <div className="group h-[30rem] w-80 rounded-lg border border-gray-300">
                 <Image
                   src={item.imageUrl}
                   alt={item.imageAlt}
@@ -48,11 +48,8 @@ export default function NewArrival() {
                 <div className=" w-full pl-6">
                   <h1 className="py-3 text-lg">{item.name}</h1>
                   <p className=" text-base text-gray-500">{item.description}</p>
-                  <p className=" pt-3 font-[italic] text-gray-500">
-                    {item.color.map((color) => {
-                      <span>{color}</span>;
-                    })}
-                  </p>
+                  <p className=" font-[italic] text-gray-500 pt-3">{item.color.length > 1 ? `${item.color.length} colors` : item.color}</p>
+                    
                   <h2 className="text-lg">{item.price}$</h2>
                 </div>
               </div>
