@@ -8,17 +8,22 @@ export const schema = Joi.object({
         .max(30)
         .required(),
 
-    ItemImage: Joi.string()
+    imageUrl: Joi.string()
         .min(3)
         .max(512)
         .required(),
+
+    imageAlt: Joi.string()
+        .min(3)
+        .max(512)
+        .required(), 
     
     description: Joi.string()
         .min(3)
         .max(256)
         .required(),
         
-    colors: Joi.array().items(Joi.string()).required().min(1),
+    color: Joi.array().items(Joi.string()).required().min(1),
 
     price: Joi.string()
         .min(1)
