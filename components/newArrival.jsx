@@ -1,11 +1,12 @@
 "use client";
 
-import tee from "../public/tee.jpeg";
 import { BsArrowRightShort } from "react-icons/bs";
 import Link from "next/link";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import axios from "axios";
+import Loading from "../app/landing/loading";
+import { Suspense } from "react";
 
 export default function NewArrival() {
   const [newArrival, setNewArrival] = useState([]);
