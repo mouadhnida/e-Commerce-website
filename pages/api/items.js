@@ -5,7 +5,10 @@ import { schema } from "../../helper/joi_schema"
 export default async function handler(req, res) {
     if( req.method === "GET")
     try {
-        const items = await prisma.item.findMany()
+        const items = await prisma.item.findMany({
+            orderBy: { createdAt: "desc" },
+            take: 10
+          })
         res.status(200).json({ items: items.length, data: items})
     } catch (error) {
         res.status(500).json({ error: error.message})

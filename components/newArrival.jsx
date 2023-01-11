@@ -1,26 +1,27 @@
-"use client";
-
 import { BsArrowRightShort } from "react-icons/bs";
 import Link from "next/link";
 import Image from "next/image";
-import { useEffect, useState } from "react";
-import axios from "axios";
-import Loading from "../app/landing/loading";
-import { Suspense } from "react";
 
-export default function NewArrival() {
-  const [newArrival, setNewArrival] = useState([]);
-  useEffect(() => {
-    async function fetchNewArrival() {
-      const data = await axios.get("/api/newArrival");
-      const items = data.data.data;
-      setNewArrival(items.slice(0, 4));
-    }
-    fetchNewArrival();
-  }, []);
+
+async function getData() {
+  const res = await fetch('http://localhost:3000/api/items');
+
+  if (!res.ok) {
+
+    throw new Error('Failed to fetch data');
+  }
+
+  return res.json();
+}
+
+
+export default async function NewArrival() {
+  const data = await getData();
+  let items = data.data;
+  items = items.slice(0,4)
 
   return (
-    <div className="relative z-10 h-[600px] bg-white px-6 pt-24 pb-20 m-sm:px-2 m-sm:pt-0">
+    <div className="relative z-10 h-auto bg-white px-6 pt-24 border border-red-500 m-sm:px-2 m-sm:pt-0">
       <div className="flex items-center justify-between pb-7">
         <div className="text-3xl font-semibold m-sm:text-2xl">
           Trending Products
@@ -34,8 +35,8 @@ export default function NewArrival() {
           </div>
         </Link>
       </div>
-      <ul className="flex flex-wrap items-center justify-center gap-24 m-2xl:gap-7">
-        {newArrival.map((item) => (
+      <ul className="flex flex-wrap items-center justify-center gap-24 m-2xl:gap-7 relative">
+        {items.map((item) => (
           <li key={item.id}>
             <Link href={`/items/${item.id}`}>
               <div className="group h-[30rem] w-80 rounded-lg border border-gray-300">
@@ -61,3 +62,6 @@ export default function NewArrival() {
     </div>
   );
 }
+
+
+
