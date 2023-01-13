@@ -1,7 +1,7 @@
 import Script from "next/script";
 
 
-import Comment from "../../components/comment";
+import Comment from "../../components/features";
 import Header from "../../components/header";
 import NewArrival from "../../components/newArrival";
 
