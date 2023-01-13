@@ -3,9 +3,9 @@ import { TbTruckDelivery } from "react-icons/tb";
 
 export default function Comment() {
   return (
-    <div className=" relative flex h-[35rem] w-full items-center justify-center bg-slate-50">
-      <div className=" grid h-72 grid-cols-3 grid-rows-1 gap-20">
-        <div className="flex w-[23.75rem] flex-col  justify-around whitespace-normal text-center">
+    <div className=" relative flex min-h-[35rem] w-full items-center justify-center bg-slate-50">
+      <div className="flex flex-wrap min-h-[18rem] justify-center gap-1">
+        <div className="flex w-[23.75rem] flex-col  justify-around whitespace-normal text-center h-[18.25rem]">
           <i className="fa-solid fa-truck fa-5x text-stone-700"></i>
           <div className=" flex h-32 flex-col justify-between">
             <h1 className="text-2xl">Free shipping</h1>
