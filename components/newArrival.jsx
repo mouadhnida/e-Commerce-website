@@ -21,8 +21,8 @@ export default async function NewArrival() {
   items = items.slice(0,4)
 
   return (
-    <div className="relative z-10 h-auto bg-white px-6 pt-24 border border-red-500 m-sm:px-2 m-sm:pt-0">
-      <div className="flex items-center justify-between pb-7">
+    <div className="relative  h-auto bg-slate-50 px-6 py-24 m-sm:px-2 m-sm:pt-0">
+      <div className="flex items-center justify-between pb-">
         <div className="text-3xl font-semibold m-sm:text-2xl">
           Trending Products
         </div>
@@ -35,11 +35,11 @@ export default async function NewArrival() {
           </div>
         </Link>
       </div>
-      <ul className="flex flex-wrap items-center justify-center gap-24 m-2xl:gap-7 relative">
+      <ul className="flex flex-wrap items-center justify-center gap-24 m-2xl:gap-7 relative top-10">
         {items.map((item) => (
           <li key={item.id}>
             <Link href={`/items/${item.id}`}>
-              <div className="group h-[30rem] w-80 rounded-lg border border-gray-300">
+              <div className="group h-[30rem] w-80 rounded-lg border border-grey-300">
                 <Image
                   src={item.imageUrl}
                   alt={item.imageAlt}
@@ -49,8 +49,8 @@ export default async function NewArrival() {
                 ></Image>
                 <div className=" w-full pl-6">
                   <h1 className="py-3 text-lg">{item.name}</h1>
-                  <p className=" text-base text-gray-500">{item.description}</p>
-                  <p className=" font-[italic] text-gray-500 pt-3">{item.color.length > 1 ? `${item.color.length} colors` : item.color}</p>
+                  <p className=" text-base text-gray-600">{item.description}</p>
+                  <p className=" font-[italic] text-gray-600 pt-3">{item.color.length > 1 ? `${item.color.length} colors` : item.color}</p>
                     
                   <h2 className="text-lg">{item.price}$</h2>
                 </div>
