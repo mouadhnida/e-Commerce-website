@@ -1,9 +1,10 @@
 import Script from "next/script";
 
 
-import Comment from "../../components/features";
 import Header from "../../components/header";
 import NewArrival from "../../components/newArrival";
+import Features from "../../components/features";
+import Footer from "../../components/footer";
 
 export default function Landing() {
   <Script
@@ -15,7 +16,8 @@ export default function Landing() {
       <div>
         <Header />
         <NewArrival/>
-        <Comment/>
+        <Features/>
+        <Footer/>
       </div>
     )
   }

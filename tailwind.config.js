@@ -12,7 +12,8 @@ module.exports = {
     },
   
     colors: {
-      'beige': '#F2DEBA'
+      'beige': '#F2DEBA',
+      'beige-100': '#FFFAF6'
     },
 
     screens: {

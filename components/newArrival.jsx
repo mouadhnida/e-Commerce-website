@@ -39,7 +39,7 @@ export default async function NewArrival() {
         {items.map((item) => (
           <li key={item.id}>
             <Link href={`/items/${item.id}`}>
-              <div className="group h-[30rem] w-80 rounded-lg border border-grey-300">
+              <div className="group h-[30rem] w-80 rounded-lg border border-grey-300 bg-white">
                 <Image
                   src={item.imageUrl}
                   alt={item.imageAlt}
