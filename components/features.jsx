@@ -1,5 +1,4 @@
-import Image from "next/image";
-import { TbTruckDelivery } from "react-icons/tb";
+
 
 export default function Features() {
   return (
@@ -16,7 +15,7 @@ export default function Features() {
           </div>
         </div>
         <div className="flex w-[23.75rem] flex-col  justify-around whitespace-normal text-center">
-          <i class="fa-solid fa-hand-holding-dollar fa-5x text-stone-700"></i>
+          <i className="fa-solid fa-hand-holding-dollar fa-5x text-stone-700"></i>
           <div className=" flex h-32 flex-col justify-between">
             <h1 className="text-2xl font-semibold">100% Money back</h1>
             <p className=" leading-7 text-gray-600">
@@ -26,7 +25,7 @@ export default function Features() {
           </div>
         </div>
         <div className="flex w-[23.75rem] flex-col  justify-around whitespace-normal text-center">
-          <i class="fa-solid fa-comments font fa-5x text-stone-700"></i>
+          <i className="fa-solid fa-comments font fa-5x text-stone-700"></i>
           <div className=" flex h-32 flex-col justify-between">
             <h1 className="text-2xl font-semibold">Online support 24/7</h1>
             <p className=" leading-7 text-gray-600">

@@ -2,7 +2,7 @@
 
 import Script from "next/script";
 import Link from "next/link";
-import IonIcon from "@reacticons/ionicons";
+
 import { useState } from "react";
 
 export default function NavBar() {
@@ -14,14 +14,6 @@ export default function NavBar() {
         src="https://kit.fontawesome.com/0f3f34a956.js"
         strategy="afterInteractive"
         crossOrigin="anonymous"
-      ></Script>
-      <Script
-        type="module"
-        src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-      ></Script>
-      <Script
-        noModule
-        src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
       ></Script>
       <h1 className="text-4xl font-extrabold hover:cursor-pointer hover:text-beige m-sm:text-3xl">
         Shopart<span className="relative top-0.5 text-sm text-beige">■</span>
